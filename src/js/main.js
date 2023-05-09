@@ -1,10 +1,10 @@
-import '../css/style.css'
-import fishImage from '../images/fish.png'
+import { Player } from "./player";
 
-const div = document.createElement("div")
-div.classList.add("fish")
-document.body.appendChild(div)
+const player1 = new Player("Mario", "red")
+player1.showName()
+player1.addPoint()
+player1.changeColor("darkred")
+player1.showName()
 
-const img = document.createElement("img")
-img.src = fishImage
-div.appendChild(img)
+const player2 = new Player("Luigi", "green")
+player2.showName()
